@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.c06fde54.css",
-    "main.js": "/static/js/main.d15b6754.js",
+    "main.js": "/static/js/main.592f637d.js",
     "static/media/CarlinHeadshot.jpg": "/static/media/CarlinHeadshot.4369b7fd42adc7bff11e.jpg",
     "index.html": "/index.html",
     "main.c06fde54.css.map": "/static/css/main.c06fde54.css.map",
-    "main.d15b6754.js.map": "/static/js/main.d15b6754.js.map"
+    "main.592f637d.js.map": "/static/js/main.592f637d.js.map"
   },
   "entrypoints": [
     "static/css/main.c06fde54.css",
-    "static/js/main.d15b6754.js"
+    "static/js/main.592f637d.js"
   ]
 }
