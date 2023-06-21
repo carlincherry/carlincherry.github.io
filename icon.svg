@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 50 50" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg height="420.0mm" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 722.925 1190.7" width="254.99999999999997mm" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs/>
-<g id="g901" vectornator:layerName="g901">
-<path d="M28.7511 45.8861C15.4958 45.8861 4.71366 36.5932 4.71366 25.1726C4.71366 13.752 15.4958 4.45915 28.7511 4.45915C34.9634 4.45915 40.8531 6.496 45.3427 10.1979L47.6768 8.09284C42.5542 3.87351 35.8349 1.55055 28.7511 1.55055C13.6328 1.55055 1.33779 12.149 1.33779 25.1726C1.33779 38.1983 13.6376 48.7947 28.7511 48.7947C36.324 48.7947 43.3718 46.1969 48.5819 41.4787L46.1303 39.4739C41.564 43.6085 35.3913 45.8861 28.7511 45.8861Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path"/>
-<path d="M28.9093 9.12985C33.7166 9.12985 38.2805 10.7071 41.7642 13.5702L44.0959 11.4683C39.9816 8.08148 34.5905 6.21815 28.9093 6.21815C16.7821 6.21815 6.90989 14.7209 6.90989 25.1726C6.90989 35.6213 16.7761 44.1271 28.9093 44.1271C34.9825 44.1271 40.6385 42.0417 44.8164 38.2561L42.3696 36.2523C38.8355 39.4543 34.0535 41.2184 28.9093 41.2184C18.6415 41.2184 10.2869 34.0203 10.2869 25.1736C10.2869 16.327 18.6415 9.12985 28.9093 9.12985Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path"/>
+<g id="Layer-1">
+<text fill="#2196f3" font-family="Helvetica-Bold" font-size="1000" opacity="1" stroke="none" text-anchor="start" transform="matrix(1 0 0 1 0 0)" x="0" y="0">
+<tspan font-weight="bold" textLength="722.168" x="0" y="970">C</tspan>
+</text>
 </g>
 </svg>
