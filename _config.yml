@@ -1,0 +1,31 @@
+title: Carlin Cherry
+description: "Philosophy major turned Product Manager — still asking 'why?'"
+url: "https://carlincherry.github.io"
+baseurl: ""
+
+permalink: /:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Pagination (if using jekyll-paginate)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# Author
+author:
+  name: Carlin Cherry
+  url: https://carlincherry.github.io
+
+# Social links
+social:
+  linkedin: https://www.linkedin.com/in/carlincherry/
+  github: https://github.com/carlincherry
