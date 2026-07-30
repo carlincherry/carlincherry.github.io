@@ -11,11 +11,11 @@ layout: default
       {{ post.date | date: "%B %-d, %Y" }}
     </time>
     <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-    <a class="post-card__read-more" href="{{ post.url | relative_url }}">Read more →</a>
+    <a class="post-card__read-more" href="{{ post.url | relative_url }}">Read more</a>
   </article>
   {% endfor %}
 
   {% if site.posts.size == 0 %}
-  <p class="empty-feed">No posts yet. Check back soon!</p>
+  <p class="empty-feed">No posts yet.</p>
   {% endif %}
 </div>
