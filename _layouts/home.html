@@ -1,21 +1,30 @@
 ---
 layout: default
 ---
+{% assign feed_items = site.posts | concat: site.data.external_content | sort: "feed_order" | reverse %}
 <div class="post-feed">
-  {% for post in site.posts %}
+  {% for item in feed_items %}
   <article class="post-card">
     <h2 class="post-card__title">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if item.source %}
+      <a href="{{ item.url | escape }}">{{ item.title }}</a>
+      {% else %}
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endif %}
     </h2>
-    <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">
-      {{ post.date | date: "%B %-d, %Y" }}
-    </time>
-    <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-    <a class="post-card__read-more" href="{{ post.url | relative_url }}">Read more</a>
+    <p class="post-card__meta">
+      {% if item.source %}{{ item.type }} on {{ item.source }}, {% endif %}<time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%B %-d, %Y" }}</time>
+    </p>
+    <p class="post-card__excerpt">{{ item.excerpt | strip_html | truncatewords: 50 }}</p>
+    {% if item.source %}
+    <a class="post-card__read-more" href="{{ item.url | escape }}">{{ item.link_text }}</a>
+    {% else %}
+    <a class="post-card__read-more" href="{{ item.url | relative_url }}">Read more</a>
+    {% endif %}
   </article>
   {% endfor %}
 
-  {% if site.posts.size == 0 %}
+  {% if feed_items.size == 0 %}
   <p class="empty-feed">No posts yet.</p>
   {% endif %}
 </div>
