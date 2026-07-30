@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lessons from Speaking at Security Conferences"
+title: "Lessons from Speaking at Conferences"
 date: 2026-01-20
 feed_order: 20260120
 ---
