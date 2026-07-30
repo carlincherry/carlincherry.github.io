@@ -2,6 +2,7 @@
 layout: post
 title: "Lessons from Speaking at Security Conferences"
 date: 2026-01-20
+feed_order: 20260120
 ---
 
 Over the past couple of years, I've spoken at GitHub Universe, RSAC, BlackHat, and Microsoft Reactor. Preparing for those rooms taught me to be deliberate about how I explain complex ideas.

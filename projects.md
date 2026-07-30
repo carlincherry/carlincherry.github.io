@@ -7,7 +7,7 @@ permalink: /projects/
 ## Open Source
 
 **[Dependabot](https://github.com/dependabot)**
-Helps more than 26 million repositories keep their dependencies secure and up to date.
+Helps more than 30 million repositories keep their dependencies secure and up to date.
 
 **[GitHub Agentic Workflows](https://github.com/github/gh-aw)**
 I created agentic workflows that triage security findings and help remediate them.

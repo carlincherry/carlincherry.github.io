@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I'm Carlin, a Senior Product Manager at GitHub working on [Dependabot](https://github.com/dependabot) and AI security for Copilot.
+I'm Carlin, a Senior Product Manager at GitHub.
 
-I came to product management after working as a software engineer and data scientist. I studied philosophy at Rice.
+I came to product management after working as a software engineer and data scientist. I studied philosophy and economics at Rice University and went to grad school for Computer Science, with a concentration in Data Science, at the University of Southern California.
 
 I've spoken at conferences including **GitHub Universe**, **RSAC**, **Microsoft Reactor**, and **BlackHat**.
 

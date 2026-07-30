@@ -1,0 +1,35 @@
+- title: "The case for a cooldown: Why Dependabot now waits before issuing version updates"
+  date: 2026-07-23
+  feed_order: 20260723
+  type: Article
+  source: GitHub Blog
+  url: https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/
+  excerpt: A look at why Dependabot now waits three days before opening non-security version update pull requests, and how that delay can reduce exposure to fast-moving supply chain attacks.
+  link_text: Read on the GitHub Blog
+
+- title: "From Dependency to Deployment: The GitHub Supply Chain Security Journey"
+  date: 2025-06-11
+  feed_order: 20250611
+  type: Talk
+  source: YouTube
+  url: https://www.youtube.com/watch?v=QtZZEK4o3Cc
+  excerpt: A Microsoft Reactor talk on using GitHub Advanced Security to protect dependencies, builds, and deployments across the software supply chain.
+  link_text: Watch on YouTube
+
+- title: "From Alerts to Action: Prioritizing Dependabot for Impact"
+  date: 2025-05-28
+  feed_order: 20250528
+  type: Talk
+  source: YouTube
+  url: https://www.youtube.com/watch?v=-eb5CJ8VaRE&t=6
+  excerpt: A Microsoft Reactor talk on prioritizing Dependabot alerts by risk, context, and team workflow.
+  link_text: Watch on YouTube
+
+- title: "Dependabot on GitHub Actions and self-hosted runners is now generally available"
+  date: 2024-05-02
+  feed_order: 20240502
+  type: Article
+  source: GitHub Blog
+  url: https://github.blog/news-insights/product-news/dependabot-on-github-actions-and-self-hosted-runners-is-now-generally-available/
+  excerpt: How running Dependabot update jobs on GitHub Actions unlocks self-hosted runners, private registry access, faster runs, and clearer logs.
+  link_text: Read on the GitHub Blog

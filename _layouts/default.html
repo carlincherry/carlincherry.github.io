@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
+  {% assign meta_description = page.excerpt | default: site.description %}
+  {% if meta_description %}
+  <meta name="description" content="{{ meta_description | strip_html | truncatewords: 50 }}">
+  {% endif %}
   {% seo %}
   {% feed_meta %}
   <link rel="icon" type="image/svg+xml" href="{{ '/icon.svg' | relative_url }}">

@@ -2,6 +2,7 @@
 layout: post
 title: "Tackling Supply Chain Vulnerabilities with Dependabot"
 date: 2026-03-10
+feed_order: 20260310
 ---
 
 The average application relies on hundreds of dependencies. Each one adds code that your team did not write and may need to patch.
