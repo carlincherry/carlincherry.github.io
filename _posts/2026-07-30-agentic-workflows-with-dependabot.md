@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My experience using Dependabot with GitHub Agentic Workflows"
+title: "From a Dependabot Experiment to Enterprise Agentic Workflows"
 date: 2026-07-30
 feed_order: 20260730
 ---
@@ -23,11 +23,15 @@ My experience in those very early experimental days was full of cryptic token er
 
 The safety model is much more explicit (for example, agents run with read-only permissions by default). Proposed writes pass through [safe outputs](https://github.github.com/gh-aw/reference/safe-outputs/), where separate jobs enforce limits before creating an issue, updating a project, or opening a pull request. Sandboxing, network controls, and threat detection add more boundaries around each run.
 
-To me, the new [governance layer](https://github.github.com/gh-aw/guides/governance/) is especially interesting. Enterprises and organizations can centrally set model defaults, AI credit budgets, timeouts, and runtime policies. A policy can disable pull request creation across an organization, while a repository-level exception can allow it for a workflow that has earned more trust. This is a cold take, but centralized policy controls and governance are among the most critical components in software, and I've been jazzed to see how the Next team has evolved here.
+## From one repository to a control plane
 
-Teams can maintain reusable workflows and shared components in a central repository, then roll them out across many repositories with consistent controls. The documentation includes a [Dependabot rollout example for 100 repositories](https://github.github.com/gh-aw/examples/multi-repo/dependabot-rollout/), using a central orchestrator to select repositories and dispatch bounded workers. :heart-eyes:
+Since my February experiment, the change that excites me most is the move from repository-level automation to a centrally managed control plane. Agentic workflows can now be packaged through [`aw.yml`](https://github.github.com/gh-aw/reference/aw-yml-package-manifest/), installed with `gh aw add-wizard`, and authenticated through a centrally managed GitHub App or PAT.
 
-There are new and exciting ways to try to get at the value provided by the agents, too. Evals record whether a run met specific goals. Experimental A/B tests compare prompt variants and outcomes. Logs, audit data, AI credit budgets, and OpenTelemetry help teams understand cost and performance. The repository's own workflows show these ideas in practice: one [reviews dependency updates and groups safe patches](https://github.com/github/gh-aw/blob/main/.github/workflows/dependabot-go-checker.md), while another [bundles related Dependabot pull requests into a bounded remediation wave](https://github.com/github/gh-aw/blob/main/.github/workflows/dependabot-burner.md).
+A private control repository can define shared guardrails once, then dispatch bounded workers to eligible repositories. The model works across three layers: an enterprise can distribute shared packages such as Dependabot automation across organizations, each organization can add its own packages and policies, and repositories can continue running local workflows alongside centrally managed automation.
+
+Rollouts can start with report-only or staged behavior before moving to live writes. Scoped permissions, safe outputs, dispatch limits, fail-closed behavior, and correlated run IDs keep the work bounded and traceable. The [CentralRepoOps pattern](https://github.github.com/gh-aw/patterns/central-repo-ops/) and [Dependabot rollout example](https://github.github.com/gh-aw/examples/multi-repo/dependabot-rollout/) show what this looks like across many repositories. :heart-eyes:
+
+There are also better ways to prove that the automation is useful. Evals measure whether a run met its goals, while logs, audit data, AI credit budgets, and OpenTelemetry make cost and performance visible. That combination of centralized control and measurable outcomes makes a broader rollout feel realistic to me.
 
 ## Why I am excited
 
